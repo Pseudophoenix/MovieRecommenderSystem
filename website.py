@@ -30,24 +30,24 @@ def recommend(movie):
 
 if st.button("Recommend 5 movies"):
     names,pos=recommend(option)
-    col1, col2, col3,col4,col5=st.columns(3)
+    col1, col2, col3,col4,col5=st.columns(5)
     with col1:
-        st.header(names[0])
+        st.text(names[0],)
         if pos[0]:
             st.image(pos[0])
     with col2:
-        st.header(names[1])
+        st.text(names[1])
         if pos[1]:
             st.image(pos[1])
     with col3:
-        st.header(names[2])
+        st.text(names[2])
         if pos[2]:
             st.image(pos[2])
     with col4:
-        st.header(names[3])
+        st.text(names[3])
         if pos[1]:
             st.image(pos[3])
     with col5:
-        st.header(names[4])
+        st.text(names[4])
         if pos[4]:
             st.image(pos[4])
